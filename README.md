@@ -1,5 +1,6 @@
 ## Telegram bot wrapper
-A simple backend for [Telegram messenger bots](https://core.telegram.org/bots)
+A simple backend for [Telegram messenger bots](https://core.telegram.org/bots).
+
 Here's a minimal example of how to turn a bot into a remote shell client.
 
 ```python

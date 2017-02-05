@@ -53,7 +53,20 @@ class Sender(Thread):
 
 class Client(Thread):
 
-    def __init__(self, token, handler, n_threads=10, timeout=300, trusted_users=None):
+    def __init__(self, token, handler, n_threads=10, timeout=300,
+                 trusted_users=None):
+        '''
+        A simple backend for Telegram messenger bot
+        https://core.telegram.org/bots
+
+        :param token: API token
+        :param handler: A callable that takes a message for bot
+            and possibly returns an answer
+        :param n_threads: Number of threads to spawn
+        :param timeout: A long polling request timeout for `getUpdates` method
+        :param trusted_users: a collection of users' ids. If provided,
+            only messages from these users are handled
+        '''
         super(Client, self).__init__()
         self.token = token
         self.handler = handler

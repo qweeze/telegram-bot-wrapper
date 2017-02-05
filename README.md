@@ -2,7 +2,7 @@
 A simple backend for [Telegram messenger bots](https://core.telegram.org/bots)
 Here's a minimal example of how to turn a bot into a remote shell client.
 
-```
+```python
 import subprocess
 from telebot import Client
 
@@ -17,5 +17,5 @@ client = Client(token='your-API-token', handler=handler)
 client.start()
 ```
 <p align="center">
-  <img src="https://github.com/qweeze/telegram-bot-wrapper/raw/master/examples/screenshot.png?raw=true" width=75% alt="screenshot"/>
+  <img src="https://github.com/qweeze/telegram-bot-wrapper/raw/master/examples/screenshot.png?raw=true" width=50% alt="screenshot"/>
 </p>
